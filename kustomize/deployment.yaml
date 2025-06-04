@@ -71,7 +71,7 @@ spec:
             memory: 512Mi
           requests:
             cpu: 100m
-            memory: 65Mi
+            memory: 66Mi
         volumeMounts:
           - name: data
             mountPath: /data
