@@ -76,7 +76,7 @@ spec:
           - name: data
             mountPath: /data
           - mountPath: /data2
-              name: my-volume
+            name: my-volume
       volumes:
         - name: data
           emptyDir: {}
