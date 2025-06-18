@@ -75,6 +75,11 @@ spec:
         volumeMounts:
           - name: data
             mountPath: /data
+          - mountPath: /data2
+              name: my-volume
       volumes:
         - name: data
           emptyDir: {}
+        - name: my-volume
+          persistentVolumeClaim:
+            claimName: my-pvc
